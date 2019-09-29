@@ -1,0 +1,14 @@
+header h1 {
+    text-align: center;
+}
+
+header nav ul {
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 1em;
+    margin-bottom: .25em;
+}

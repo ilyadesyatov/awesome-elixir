@@ -7,24 +7,46 @@
     <title>Awesome · Phoenix Framework</title>
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
   </head>
+
   <body>
-    <header>
-      <section class="container">
-        <nav role="navigation">
-          <ul>
-            <li><a href="https://hexdocs.pm/phoenix/overview.html">Get Started</a></li>
-          </ul>
-        </nav>
-        <a href="http://phoenixframework.org/" class="phx-logo">
-          <img src="<%= Routes.static_path(@conn, "/images/phoenix.png") %>" alt="Phoenix Framework Logo"/>
-        </a>
-      </section>
-    </header>
-    <main role="main" class="container">
-      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
-      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
-      <%= render @view_module, @view_template, assigns %>
-    </main>
+    <div class="container">
+        <header>
+          <h1>Awesome Elixir</h1>
+          <nav>
+              <ul>
+                <li>
+                  <a href="/">All</a>
+                </li>
+                  <li>
+                    <a href="/?min_stars=10">≥10⭐</a>
+                  </li>
+                  <li>
+                    <a href="/?min_stars=50">≥50⭐</a>
+                  </li>
+                  <li>
+                    <a href="/?min_stars=100">≥100⭐</a>
+                  </li>
+                  <li>
+                    <a href="/?min_stars=500">≥500⭐</a>
+                  </li>
+                  <li>
+                    <a href="/?min_stars=1000">≥1000🌟</a>
+                  </li>
+                </ul>
+            </nav>
+            <p>
+              Elixir is awesome. And it has a vast awesome list: <a href="https://github.com/h4cc/awesome-elixir">h4cc/awesome-elixir</a>.
+              This is a mirror of it where each library is marked with number of
+              stars at <a href="https://github.com">Github</a> and number of days since
+              the last commit.
+            </p>
+        </header>
+        <main role="main">
+          <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+          <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+          <%= render @view_module, @view_template, assigns %>
+        </main>
+    </div>
     <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>
