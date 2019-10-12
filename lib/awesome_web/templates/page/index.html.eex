@@ -1,35 +1,26 @@
-<section class="phx-hero">
-  <h1><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h1>
-  <p>A productive web framework that<br/>does not compromise speed or maintainability.</p>
-</section>
+<div>
+    <h2>Contents</h2>
+    <ul>
+        <%= for section <- @sections do %>
+            <li><%= link(section.name, to: "##{text_to_id(section.name)}") %></li>
+        <% end %>
+    </ul>
 
-<section class="row">
-  <article class="column">
-    <h2>Resources</h2>
-    <ul>
-      <li>
-        <a href="https://hexdocs.pm/phoenix/overview.html">Guides &amp; Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix/blob/v1.4/CHANGELOG.md">v1.4 Changelog</a>
-      </li>
-    </ul>
-  </article>
-  <article class="column">
-    <h2>Help</h2>
-    <ul>
-      <li>
-        <a href="https://elixirforum.com/c/phoenix-forum">Forum</a>
-      </li>
-      <li>
-        <a href="https://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on Freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">Twitter @elixirphoenix</a>
-      </li>
-    </ul>
-  </article>
-</section>
+    <br/>
+    <br/>
+    <%= for section <- @sections do %>
+        <h2 class="packages-name" id=<%= text_to_id(section.name) %>><%= section.name %></h2>
+        <p><%= section.description %></p>
+        <ul class="packages-list" >
+            <%= for package <- section.packages do %>
+                <li class=<%= less_year(package.updated_days_ago) %>>
+                    <%= link(package.name, to: "https://github.com/#{package.link}") %>
+                    <span class="ml-10">⭐<%= package.stars %></span>
+                    <span class="glyphicon glyphicon-calendar ml-10" aria-hidden="true"><%= package.updated_days_ago %></span>
+                    -
+                    <%= package.description %>
+                </li>
+            <% end %>
+        </ul>
+    <% end %>
+</div>

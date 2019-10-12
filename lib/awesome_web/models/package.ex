@@ -5,9 +5,9 @@ defmodule AwesomeWeb.Package do
     field :name, :string
     field :description, :string
     field :stars, :integer
+    field :link, :string
     field :updated_days_ago, :integer
-
-    timestamps()
+    belongs_to :section, AwesomeWeb.Section
   end
 
   @doc """

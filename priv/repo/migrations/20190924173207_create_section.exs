@@ -5,8 +5,6 @@ defmodule Funbox.Repo.Migrations.CreateSection do
     create table(:sections) do
       add :name, :string
       add :description, :text
-
-      timestamps()
     end
   end
 end

@@ -17,6 +17,9 @@ defmodule Awesome.DataCase do
   using do
     quote do
       alias Awesome.Repo
+      alias AwesomeWeb.Section
+      alias AwesomeWeb.Package
+      alias AwesomeToolbox
 
       import Ecto
       import Ecto.Changeset

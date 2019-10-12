@@ -25,6 +25,11 @@ config :logger, :console,
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
 
+# Custom environments
+config :awesome,
+  github_token: System.get_env("GITHUB_TOKEN"),
+  link_for_parse: "h4cc/awesome-elixir"
+
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env()}.exs"

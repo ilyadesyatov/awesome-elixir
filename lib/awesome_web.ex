@@ -50,6 +50,7 @@ defmodule AwesomeWeb do
       use Phoenix.HTML
 
       import AwesomeWeb.ErrorHelpers
+      import AwesomeWeb.CustomHelpers
       import AwesomeWeb.Gettext
       alias AwesomeWeb.Router.Helpers, as: Routes
     end

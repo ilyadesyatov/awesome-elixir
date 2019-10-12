@@ -1,20 +1,63 @@
-# Awesome
+# Awesome Elixir
 
-To start your Phoenix server:
+Application parsing every hour Markdown from [h4cc/awesome-elixir](https://github.com/h4cc/awesome-elixir). And saves data to the DB for further work with them.
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Install Node.js dependencies with `cd assets && npm install`
-  * Start Phoenix endpoint with `mix phx.server`
+## Getting Started
 
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Installing
+
+In project root path, create .env file
+
+[link](https://github.com/settings/tokens/new) for generating GitHub API personal access token.
+
+```
+export GITHUB_TOKEN="GitHub_API_token"
+```
+
+Run from root path of application run
+
+```
+source .env
+```
+
+### Create DB and run migrations
+
+From root path, create db
+
+```
+mix ecto.create 
+```
+
+Run migrations
+
+```
+mix ecto.migrate
+```
+
+### Run application
+
+Application launch
+
+```
+iex -S mix phx.server
+```
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+## Running the tests
+Run from root path of application run
 
-## Learn more
+```
+source .env
+```
 
-  * Official website: http://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
+then
+
+```
+mix test
+```
+
+## Author
+
+[**Ilya Desyatov**](https://github.com/chirik)

@@ -6,9 +6,9 @@ defmodule Funbox.Repo.Migrations.CreatePackage do
       add :name, :string
       add :description, :text
       add :stars, :integer
+      add :link, :string
       add :updated_days_ago, :integer
       add :section_id, references(:sections)
-      timestamps()
     end
   end
 end

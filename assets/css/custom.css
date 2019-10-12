@@ -12,3 +12,22 @@ header nav ul li {
     margin-right: 1em;
     margin-bottom: .25em;
 }
+.packages-name {
+    margin: 0;
+}
+.packages-list {
+    padding-inline-start: 40px;
+}
+
+.outdated {
+    color: #CCC;
+    font-size: .8em;
+}
+
+.outdated a {
+    color: #BBB;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
