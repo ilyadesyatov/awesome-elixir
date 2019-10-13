@@ -10,7 +10,7 @@ defmodule Awesome.Worker do
   end
 
   defp schedule_work do
-    Process.send_after(self(), :kill_self, 10 * 60 * 1000)
+    Process.send_after(self(), :kill_self, 60 * 60 * 1000)
   end
 
   def init(state) do

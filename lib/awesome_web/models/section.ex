@@ -4,7 +4,7 @@ defmodule AwesomeWeb.Section do
   schema "sections" do
     field :name, :string
     field :description, :string
-    has_many :packages, AwesomeWeb.Package, foreign_key: :section_id, on_delete: :delete_all, on_replace: :delete
+    has_many :packages, AwesomeWeb.Package, foreign_key: :section_id, on_delete: :delete_all
   end
 
   @doc """

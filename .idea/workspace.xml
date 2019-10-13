@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95e04457-8e72-4430-bf0a-57a2e80891c3" name="Default Changelist" comment="" />
+    <list default="true" id="95e04457-8e72-4430-bf0a-57a2e80891c3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/simple_setInterval.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/simple_setInterval.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/prod.exs" beforeDir="false" afterPath="$PROJECT_DIR$/config/prod.exs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/awesome_toolbox.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/awesome_toolbox.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/awesome_toolbox/application.ex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/awesome_web/controllers/page_controller.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/awesome_web/controllers/page_controller.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/awesome_web/models/section.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/awesome_web/models/section.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectFilesBackup/.idea/awesome.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/awesome_toolbox/parser_test.exs" beforeDir="false" afterPath="$PROJECT_DIR$/test/awesome_toolbox/parser_test.exs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/support/factory.ex" beforeDir="false" afterPath="$PROJECT_DIR$/test/support/factory.ex" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/_build/dev/lib/connection/" />
     <ignored path="$PROJECT_DIR$/_build/dev/lib/cowboy/" />
     <ignored path="$PROJECT_DIR$/_build/dev/lib/cowlib/" />
@@ -112,17 +125,18 @@
           <entry key="babelrc" value="1" />
           <entry key="beam" value="5" />
           <entry key="config" value="3" />
-          <entry key="css" value="8" />
-          <entry key="eex" value="8" />
-          <entry key="env" value="7" />
-          <entry key="ex" value="100" />
-          <entry key="exs" value="52" />
-          <entry key="gitignore" value="2" />
+          <entry key="css" value="11" />
+          <entry key="eex" value="12" />
+          <entry key="env" value="8" />
+          <entry key="ex" value="131" />
+          <entry key="exs" value="68" />
+          <entry key="gitignore" value="4" />
           <entry key="gitignore_global" value="1" />
-          <entry key="js" value="3" />
-          <entry key="json" value="5" />
+          <entry key="iml" value="1" />
+          <entry key="js" value="6" />
+          <entry key="json" value="6" />
           <entry key="lock" value="5" />
-          <entry key="md" value="5" />
+          <entry key="md" value="7" />
           <entry key="packages" value="14" />
           <entry key="sample" value="1" />
           <entry key="sections" value="13" />
@@ -131,45 +145,46 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key=".env file" value="7" />
+          <entry key=".env file" value="8" />
           <entry key="BEAM" value="5" />
-          <entry key="CSS" value="8" />
+          <entry key="CSS" value="11" />
           <entry key="Database Element" value="27" />
-          <entry key="EEx" value="8" />
-          <entry key="Elixir Script" value="52" />
-          <entry key="Elixir file" value="100" />
+          <entry key="EEx" value="12" />
+          <entry key="Elixir Script" value="68" />
+          <entry key="Elixir file" value="131" />
           <entry key="Env File" value="1" />
-          <entry key="JSON" value="6" />
-          <entry key="JavaScript" value="3" />
-          <entry key="Markdown" value="5" />
-          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="JSON" value="7" />
+          <entry key="JavaScript" value="6" />
+          <entry key="Markdown" value="7" />
+          <entry key="PLAIN_TEXT" value="14" />
           <entry key="Scratch" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cell" value="27" />
-          <entry key="config" value="8" />
+          <entry key="config" value="9" />
           <entry key="css" value="93" />
           <entry key="eex" value="436" />
-          <entry key="ex" value="5428" />
-          <entry key="exs" value="3743" />
-          <entry key="gitignore" value="13" />
-          <entry key="js" value="11" />
+          <entry key="ex" value="5578" />
+          <entry key="exs" value="3847" />
+          <entry key="gitignore" value="15" />
+          <entry key="js" value="74" />
           <entry key="json" value="4" />
-          <entry key="md" value="57" />
+          <entry key="md" value="81" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="93" />
           <entry key="EEx" value="436" />
-          <entry key="Elixir Script" value="3743" />
-          <entry key="Elixir file" value="5428" />
+          <entry key="Elixir Script" value="3847" />
+          <entry key="Elixir file" value="5578" />
           <entry key="JSON" value="4" />
-          <entry key="JavaScript" value="11" />
-          <entry key="Markdown" value="57" />
-          <entry key="PLAIN_TEXT" value="21" />
+          <entry key="JavaScript" value="74" />
+          <entry key="Markdown" value="81" />
+          <entry key="PLAIN_TEXT" value="24" />
           <entry key="Scratch" value="27" />
         </counts>
       </usages-collector>
@@ -177,80 +192,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test_helper.exs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="54" selection-start-column="54" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/elixir_buildpack.config">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mix.exs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
-              <caret line="44" selection-start-line="44" selection-end-line="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/prod.exs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+            <state relative-caret-position="285">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/package.json">
+        <entry file="file://$PROJECT_DIR$/lib/awesome_toolbox.ex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+            <state relative-caret-position="-1580">
+              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deps/phoenix/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/lib/awesome_web/controllers/page_controller.ex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deps/phoenix/package.json">
+        <entry file="file://$PROJECT_DIR$/lib/awesome_web/models/package.ex">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_build/dev/lib/awesome/priv/static/js/app.js">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2">
-              <caret line="73" column="57" lean-forward="true" selection-start-line="73" selection-start-column="57" selection-end-line="73" selection-end-column="57" />
+            <state relative-caret-position="331">
+              <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/phoenix_static_buildpack.config">
+        <entry file="file://$PROJECT_DIR$/lib/awesome_web/models/section.ex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+            <state relative-caret-position="114">
+              <caret line="6" column="92" selection-start-line="6" selection-start-column="92" selection-end-line="6" selection-end-column="92" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/awesome_web/templates/layout/app.html.eex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-696" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/awesome_web/templates/page/index.html.eex">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/awesome/worker.ex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+            <state relative-caret-position="399">
+              <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -259,11 +276,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>html_readme</find>
-      <find>with</find>
-      <find>with {</find>
-      <find>case</find>
-      <find>DataCase</find>
       <find>AwesomeWeb</find>
       <find>repo_text</find>
       <find>repo_link</find>
@@ -280,7 +292,6 @@
       <find>elixir_buildpack</find>
       <find>url: [host: &quot;example.com&quot;, port: 80],</find>
       <find>80</find>
-      <find>IO.</find>
       <find>PORT=</find>
       <find>mysterious</find>
       <find>boot</find>
@@ -289,6 +300,12 @@
       <find>./deps/phoenix</find>
       <find>/deps/phoenix</find>
       <find>js-yaml</find>
+      <find>http</find>
+      <find>package_info</find>
+      <find>repo_last_commit_ago</find>
+      <find>pool</find>
+      <find>IO</find>
+      <find>IO.</find>
     </findStrings>
     <replaceStrings>
       <replace>AwesomeToolbox</replace>
@@ -296,8 +313,10 @@
     <dirStrings>
       <dir>$PROJECT_DIR$/test</dir>
       <dir>$PROJECT_DIR$/lib</dir>
-      <dir>$PROJECT_DIR$</dir>
       <dir>$PROJECT_DIR$/assets</dir>
+      <dir>$PROJECT_DIR$/_build</dir>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/config</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -307,9 +326,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/priv/repo/migrations/20190924173207_create_section.exs" />
-        <option value="$PROJECT_DIR$/lib/awesome_web/models/section.ex" />
         <option value="$PROJECT_DIR$/priv/repo/migrations/20190925203659_create_package.exs" />
-        <option value="$PROJECT_DIR$/assets/js/app.js" />
         <option value="$PROJECT_DIR$/assets/css/app.css" />
         <option value="$PROJECT_DIR$/lib/awesome_web/models/package.ex" />
         <option value="$PROJECT_DIR$/lib/awesome_web.ex" />
@@ -325,34 +342,37 @@
         <option value="$PROJECT_DIR$/test/support/conn_case.ex" />
         <option value="$PROJECT_DIR$/lib/awesome/factory.ex" />
         <option value="$PROJECT_DIR$/mix.exs" />
-        <option value="$PROJECT_DIR$/test/test_helper.exs" />
         <option value="$PROJECT_DIR$/test/factories/section_factory.ex" />
         <option value="$PROJECT_DIR$/test/factories/package_factory.ex" />
-        <option value="$PROJECT_DIR$/test/support/factory.ex" />
         <option value="$PROJECT_DIR$/lib/awesome/application.ex" />
         <option value="$PROJECT_DIR$/test/awesome_toolbox/views/error_view_test.exs" />
         <option value="$PROJECT_DIR$/test/awesome_toolbox/views/page_view_test.exs" />
         <option value="$PROJECT_DIR$/test/awesome_web/views/error_view_test.exs" />
         <option value="$PROJECT_DIR$/test/support/data_case.ex" />
         <option value="$PROJECT_DIR$/.env.sample" />
-        <option value="$PROJECT_DIR$/config/test.exs" />
-        <option value="$PROJECT_DIR$/lib/awesome_web/controllers/page_controller.ex" />
         <option value="$PROJECT_DIR$/test/awesome_web/controllers/page_controller_test.exs" />
         <option value="$PROJECT_DIR$/config/config.exs" />
-        <option value="$PROJECT_DIR$/lib/awesome_toolbox/github.ex" />
-        <option value="$PROJECT_DIR$/lib/awesome_toolbox.ex" />
-        <option value="$PROJECT_DIR$/test/awesome_toolbox/parser_test.exs" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Procfile" />
-        <option value="$PROJECT_DIR$/config/prod.exs" />
         <option value="$PROJECT_DIR$/config/prod.secret.exs" />
         <option value="$PROJECT_DIR$/.gitignore_global" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/lib/awesome/worker.ex" />
         <option value="$PROJECT_DIR$/phoenix_static_buildpack.config" />
         <option value="$PROJECT_DIR$/assets/package-lock.json" />
-        <option value="$PROJECT_DIR$/assets/package.json" />
         <option value="$PROJECT_DIR$/elixir_buildpack.config" />
+        <option value="$PROJECT_DIR$/assets/js/app.js" />
+        <option value="$PROJECT_DIR$/assets/package.json" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/assets/js/simple_setInterval.js" />
+        <option value="$PROJECT_DIR$/test/support/factory.ex" />
+        <option value="$PROJECT_DIR$/config/test.exs" />
+        <option value="$PROJECT_DIR$/test/test_helper.exs" />
+        <option value="$PROJECT_DIR$/config/prod.exs" />
+        <option value="$PROJECT_DIR$/lib/awesome_toolbox/github.ex" />
+        <option value="$PROJECT_DIR$/lib/awesome_web/controllers/page_controller.ex" />
+        <option value="$PROJECT_DIR$/lib/awesome_web/models/section.ex" />
+        <option value="$PROJECT_DIR$/lib/awesome/worker.ex" />
+        <option value="$PROJECT_DIR$/test/awesome_toolbox/parser_test.exs" />
+        <option value="$PROJECT_DIR$/lib/awesome_toolbox.ex" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -371,10 +391,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1987" />
-    <option name="y" value="25" />
-    <option name="width" value="1853" />
-    <option name="height" value="1055" />
+    <option name="x" value="1864" />
+    <option name="y" value="27" />
+    <option name="width" value="1843" />
+    <option name="height" value="789" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -393,18 +413,148 @@
             <path>
               <item name="awesome" type="b2602c69:ProjectViewProjectNode" />
               <item name="awesome" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="awesome" type="b2602c69:ProjectViewProjectNode" />
               <item name="awesome" type="462c0819:PsiDirectoryNode" />
-              <item name="deps" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="awesome" type="b2602c69:ProjectViewProjectNode" />
               <item name="awesome" type="462c0819:PsiDirectoryNode" />
-              <item name="deps" type="462c0819:PsiDirectoryNode" />
-              <item name="phoenix" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="awesome" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awesome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awesome" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="awesome_toolbox" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awesome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awesome" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="awesome_web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awesome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awesome" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="awesome_web" type="462c0819:PsiDirectoryNode" />
+              <item name="channels" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awesome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awesome" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="awesome_web" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awesome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awesome" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="awesome_web" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awesome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awesome" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="awesome_web" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awesome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awesome" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="awesome_web" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awesome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awesome" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="awesome_web" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awesome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awesome" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="awesome_web" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awesome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awesome" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awesome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awesome" type="462c0819:PsiDirectoryNode" />
+              <item name="priv" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awesome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awesome" type="462c0819:PsiDirectoryNode" />
+              <item name="priv" type="462c0819:PsiDirectoryNode" />
+              <item name="gettext" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awesome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awesome" type="462c0819:PsiDirectoryNode" />
+              <item name="priv" type="462c0819:PsiDirectoryNode" />
+              <item name="repo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awesome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awesome" type="462c0819:PsiDirectoryNode" />
+              <item name="priv" type="462c0819:PsiDirectoryNode" />
+              <item name="repo" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awesome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awesome" type="462c0819:PsiDirectoryNode" />
+              <item name="priv" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awesome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awesome" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awesome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awesome" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="awesome_toolbox" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awesome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awesome" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="awesome_web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awesome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awesome" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="awesome_web" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awesome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awesome" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="awesome_web" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -473,12 +623,12 @@
       <workItem from="1570733647513" duration="13773000" />
       <workItem from="1570748287537" duration="286000" />
       <workItem from="1570903239581" duration="23361000" />
-      <workItem from="1570964691808" duration="2488000" />
+      <workItem from="1570964691808" duration="15233000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167758000" />
+    <option name="totallyTimeSpent" value="180503000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -544,96 +694,114 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/awesome_web/models/section.ex">
+    <entry file="file://$PROJECT_DIR$/mix.exs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        <state relative-caret-position="836">
+          <caret line="44" selection-start-line="44" selection-end-line="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/awesome/repo.ex">
+    <entry file="file://$PROJECT_DIR$/phoenix_static_buildpack.config">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" selection-start-column="10" selection-end-column="22" />
+        <state relative-caret-position="76">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/awesome/application.ex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deps/earmark/lib/earmark.ex">
+    <entry file="file://$PROJECT_DIR$/elixir_buildpack.config">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="10" selection-start-column="10" selection-end-column="10" />
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/awesome_toolbox/controllers/page_controller_test.exs" />
-    <entry file="file://$PROJECT_DIR$/test/awesome_toolbox/views/page_view_test.exs" />
-    <entry file="file://$PROJECT_DIR$/test/awesome_toolbox/views/layout_view_test.exs" />
-    <entry file="file://$PROJECT_DIR$/test/awesome_toolbox/views/error_view_test.exs" />
-    <entry file="file://$PROJECT_DIR$/test/support/channel_case.ex">
+    <entry file="file://$PROJECT_DIR$/_build/dev/lib/awesome/priv/static/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="83" selection-start-line="81" selection-start-column="2357" selection-end-line="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deps/phoenix/package.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env.sample" />
-    <entry file="file://$PROJECT_DIR$/test/support/data_case.ex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+    <entry file="file://$PROJECT_DIR$/deps/phoenix/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/awesome_web/views/error_view_test.exs">
+    <entry file="file://$PROJECT_DIR$/assets/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-256" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="3129" column="23" selection-start-line="3129" selection-start-column="19" selection-end-line="3129" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="7" column="38" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="38" />
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/phoenix.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="61" selection-start-column="21" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/socket.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/simple_setInterval.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/awesome_web/router.ex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-144" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/awesome_web/endpoint.ex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-524" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/awesome_web/gettext.ex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-106" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/test.exs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/test/support/factory.ex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/awesome_web/controllers/page_controller.ex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_helper.exs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="54" selection-start-column="54" selection-end-column="54" />
+        <state relative-caret-position="198">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
@@ -644,193 +812,177 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/lib/elixir/lib/elixir/ebin/Elixir.Kernel.beam">
-      <provider editor-type-id="BEAM" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="403" column="6" selection-start-line="403" selection-start-column="6" selection-end-line="403" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/http/http.ex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/http/response.ex">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/awesome_web.ex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/support/conn_case.ex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-163">
-          <caret column="10" selection-start-column="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/awesome_toolbox/github.ex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="28" column="77" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/awesome_web/controllers/page_controller_test.exs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="33" column="30" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/awesome_toolbox.ex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-513">
-          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/awesome_toolbox/parser_test.exs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-680">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="140">
-            <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/dev.exs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="10" />
+        <state relative-caret-position="-923">
+          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/prod.secret.exs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
+        <state relative-caret-position="-106">
           <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
+    <entry file="file://$PROJECT_DIR$/config/test.exs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="61" selection-start-column="21" selection-end-column="61" />
+        <state relative-caret-position="133">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore_global" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json" />
-    <entry file="file://$PROJECT_DIR$/assets/webpack.config.js">
+    <entry file="file://$PROJECT_DIR$/lib/awesome/application.ex">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/mix.lock">
+    <entry file="file://$PROJECT_DIR$/lib/awesome/repo.ex">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/awesome_toolbox/application.ex">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/awesome_toolbox/github.ex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="357" selection-start-line="18" selection-start-column="357" selection-end-line="18" selection-end-column="357" />
+        <state relative-caret-position="179">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/awesome_web/channels/user_socket.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-277" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/awesome_web/endpoint.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-125" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/awesome_web/views/custom_helpers.ex">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/awesome_web/views/error_helpers.ex">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/awesome_web/views/error_view.ex">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/http/http.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/http/response.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-543" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/awesome.ex">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/awesome_web.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-714">
+          <caret column="20" selection-start-column="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/priv/repo/seeds.exs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projectFilesBackup/.idea/awesome.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/priv/repo/migrations/.formatter.exs">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.formatter.exs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/.babelrc">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mix.exs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="44" selection-start-line="44" selection-end-line="45" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="133">
+            <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/prod.exs">
+    <entry file="file://$PROJECT_DIR$/test/awesome_toolbox/parser_test.exs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+        <state relative-caret-position="-1303">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/awesome_web/controllers/page_controller_test.exs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="33" column="30" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_helper.exs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="54" selection-start-column="54" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/awesome/worker.ex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+        <state relative-caret-position="399">
+          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/package-lock.json">
+    <entry file="file://$PROJECT_DIR$/lib/awesome_web/controllers/page_controller.ex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="6969" column="43" selection-start-line="6969" selection-start-column="25" selection-end-line="6969" selection-end-column="43" />
+        <state relative-caret-position="285">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deps/phoenix/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deps/phoenix/package.json">
+    <entry file="file://$PROJECT_DIR$/lib/awesome_web/models/package.ex">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/phoenix_static_buildpack.config">
+    <entry file="file://$PROJECT_DIR$/lib/awesome_web/models/section.ex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        <state relative-caret-position="114">
+          <caret line="6" column="92" selection-start-line="6" selection-start-column="92" selection-end-line="6" selection-end-column="92" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_build/dev/lib/awesome/priv/static/js/app.js">
+    <entry file="file://$PROJECT_DIR$/lib/awesome_web/templates/layout/app.html.eex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="73" column="57" lean-forward="true" selection-start-line="73" selection-start-column="57" selection-end-line="73" selection-end-column="57" />
+        <state relative-caret-position="-696" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/awesome_web/templates/page/index.html.eex">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/awesome_toolbox.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1580">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/package.json">
+    <entry file="file://$PROJECT_DIR$/config/prod.exs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/elixir_buildpack.config">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        <state relative-caret-position="285">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>

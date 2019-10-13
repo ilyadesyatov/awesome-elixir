@@ -5,7 +5,6 @@ defmodule AwesomeToolbox.ParserTest do
     {:ok, link: Application.get_env(:awesome, :link_for_parse)}
   end
 
-
   describe "AwesomeToolbox.Github.repo_info/1" do
     test "data from github page", state do
       assert match?({:ok, _}, AwesomeToolbox.Github.repo_info(state[:link])),
@@ -75,7 +74,6 @@ defmodule AwesomeToolbox.ParserTest do
       {:ok, tuple_readme, first_item} = parse_sections_result(state[:link])
 
       {_, _, section_name} = first_item
-
       title = hd section_name
       assert match?({:ok, _}, AwesomeToolbox.create_section(title, tuple_readme)),
              "section was not create"

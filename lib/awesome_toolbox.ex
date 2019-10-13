@@ -11,12 +11,10 @@ defmodule AwesomeToolbox do
   def annotate_readme(repo_name) do
     with {:ok, tuple_readme, html_readme} <- parse_readme(repo_name),
          {:ok, sections_parse_result} <- parse_sections(html_readme) do
-            result = sections_parse_result
-              |> Enum.slice(-2..-1)
-              |> Enum.each(fn(element) ->
-                  element_name = hd elem(element, 2)
-                  create_section(element_name, tuple_readme)
-                 end)
+            sections_parse_result |> Enum.each(fn(element) ->
+               element_name = hd elem(element, 2)
+               create_section(element_name, tuple_readme)
+            end)
       {:ok}
     else
       err -> {:error, err}
@@ -53,12 +51,7 @@ defmodule AwesomeToolbox do
           if old_element do
             Repo.delete(old_element)
           end
-
-          with {:ok, struct} = Repo.insert(new_section) do
-            {:ok, struct}
-          else
-            err -> {:error, err}
-          end
+          {:ok, struct} = Repo.insert(new_section)
     else
       err -> {:error, err}
     end

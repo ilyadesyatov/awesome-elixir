@@ -13,7 +13,6 @@ defmodule Awesome.Factory do
 
   def package_factory(attrs) do
     stars = Map.get(attrs, :stars, 0)
-    updated_days_ago = Map.get(attrs, :updated_days_ago, 0)
     %AwesomeWeb.Package{
       name: sequence(:name, &"Package Name #{&1}"),
       description: "some Package description",
