@@ -149,7 +149,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cell" value="27" />
-          <entry key="config" value="5" />
+          <entry key="config" value="8" />
           <entry key="css" value="93" />
           <entry key="eex" value="436" />
           <entry key="ex" value="5428" />
@@ -169,7 +169,7 @@
           <entry key="JSON" value="4" />
           <entry key="JavaScript" value="11" />
           <entry key="Markdown" value="57" />
-          <entry key="PLAIN_TEXT" value="18" />
+          <entry key="PLAIN_TEXT" value="21" />
           <entry key="Scratch" value="27" />
         </counts>
       </usages-collector>
@@ -177,11 +177,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/elixir_buildpack.config">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="108" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="108" />
+            <state relative-caret-position="95">
+              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -204,7 +204,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
@@ -343,7 +343,6 @@
         <option value="$PROJECT_DIR$/lib/awesome_toolbox.ex" />
         <option value="$PROJECT_DIR$/test/awesome_toolbox/parser_test.exs" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/elixir_buildpack.config" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/config/prod.exs" />
         <option value="$PROJECT_DIR$/config/prod.secret.exs" />
@@ -353,6 +352,7 @@
         <option value="$PROJECT_DIR$/phoenix_static_buildpack.config" />
         <option value="$PROJECT_DIR$/assets/package-lock.json" />
         <option value="$PROJECT_DIR$/assets/package.json" />
+        <option value="$PROJECT_DIR$/elixir_buildpack.config" />
       </list>
     </option>
   </component>
@@ -473,12 +473,12 @@
       <workItem from="1570733647513" duration="13773000" />
       <workItem from="1570748287537" duration="286000" />
       <workItem from="1570903239581" duration="23361000" />
-      <workItem from="1570964691808" duration="2000000" />
+      <workItem from="1570964691808" duration="2488000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167270000" />
+    <option name="totallyTimeSpent" value="167758000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -491,8 +491,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1987" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3032651" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3032651" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -505,7 +506,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" weight="0.32900432" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4997233" visible="true" weight="0.44047618" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4997233" visible="true" weight="0.44047618" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5002767" side_tool="true" weight="0.32900432" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.32900432" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -766,13 +767,6 @@
     <entry file="file://$PROJECT_DIR$/assets/.babelrc">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/elixir_buildpack.config">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="108" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mix.exs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="836">
@@ -830,6 +824,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elixir_buildpack.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
         </state>
       </provider>
     </entry>
