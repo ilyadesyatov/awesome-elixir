@@ -60,4 +60,4 @@ mix test
 
 ## Author
 
-[**Ilya Desyatov**](https://github.com/chirik)
+[**Ilya Desyatov**](https://github.com/ilyadesyatov)
