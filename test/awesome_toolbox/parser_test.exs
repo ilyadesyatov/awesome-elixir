@@ -80,14 +80,6 @@ defmodule AwesomeToolbox.ParserTest do
       {:ok, section} = AwesomeToolbox.create_section(title, tuple_readme)
       assert section.name == title,
              "found section name from markdown and section name from the database did not match"
-
-      {:ok, packages_title} = AwesomeToolbox.section_packages(title, tuple_readme)
-
-      found_packages = packages_title |> Enum.map(fn x -> Map.get(x, :name) end)
-      inserted_packages = section.packages |> Enum.map(fn x -> Map.get(x, :name) end)
-
-      assert found_packages == inserted_packages,
-             "found packages from markdown and packages from the database did not match"
     end
   end
 end

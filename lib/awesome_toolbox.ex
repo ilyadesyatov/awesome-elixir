@@ -8,14 +8,10 @@ defmodule AwesomeToolbox do
   @github_repo_rx   ~r/https:\/\/github.com\/(?<repo_name>[0-9a-zA-Z._-]+\/[0-9a-zA-Z._-]+)/
   @github_repo_text ~r/[0-9a-zA-Z._-]+ \- |\n/
 
-  def annotate_readme(repo_name) do
-    with {:ok, tuple_readme, html_readme} <- parse_readme(repo_name),
-         {:ok, sections_parse_result} <- parse_sections(html_readme) do
-            sections_parse_result |> Enum.each(fn(element) ->
-               element_name = hd elem(element, 2)
-               create_section(element_name, tuple_readme)
-            end)
-      {:ok}
+  def annotate_readme(link) do
+    with  {:ok, tuple_readme, html_readme} <- AwesomeToolbox.parse_readme(link),
+          {:ok, sections_parse_result} <- AwesomeToolbox.parse_sections(html_readme) do
+      {:ok, tuple_readme, sections_parse_result}
     else
       err -> {:error, err}
     end
@@ -40,18 +36,16 @@ defmodule AwesomeToolbox do
   end
 
   def create_section(element_name, tuple_readme) do
-    with {:ok, element_description} <- section_description(element_name, tuple_readme),
-         {:ok, packages} <- section_packages(element_name, tuple_readme) do
-          new_section = %Section{
-            name: element_name,
-            description: element_description,
-            packages: packages
-          }
-          old_element = Repo.get_by(Section, name: element_name, description: element_description)
-          if old_element do
-            Repo.delete(old_element)
-          end
-          {:ok, struct} = Repo.insert(new_section)
+    with {:ok, element_description} <- section_description(element_name, tuple_readme) do
+      changes = %{description: element_description}
+      {:ok, result} =
+        case Repo.get_by(Section, name: element_name) do
+          nil  -> %Section{name: element_name, description: element_description}
+          section -> section
+        end
+        |> Section.changeset(changes)
+        |> Repo.insert_or_update
+      {:ok, result}
     else
       err -> {:error, err}
     end
@@ -59,37 +53,44 @@ defmodule AwesomeToolbox do
 
   def section_packages(section, tuple) do
     number = Enum.find_index(tuple, fn x -> x == {"h2", [], [section]} end)
-    result = Enum.at(tuple, number + 2)
-             |> Floki.find("li")
-             |> Enum.map(&package/1)
-             |> Enum.reject(&is_nil/1)
+    result = Enum.at(tuple, number + 2) |> Floki.find("li")
     {:ok, result}
   end
 
-  def package_info(repo_link_name) do
-    with {:ok, repo_info} <- Github.repo_info(repo_link_name),
-         {:ok, update_ago} <- Github.repo_last_commit_ago(repo_link_name) do
-            {:ok, repo_info, update_ago}
-    else
-      err -> {:error, err}
-    end
-  end
-
-  def package(element) do
+  def package(element, section_id) do
     repo_link_name = repo_link(Floki.find(element, "a") |> Floki.attribute("href") |> hd)
     with {:ok, repo_info, update_ago} <- package_info(repo_link_name) do
             repo_text_name = element |> Floki.find("a") |> Floki.text
             repo_description = repo_text(element |> Floki.text)
             %{"stargazers_count" => stargazers_count} = repo_info
 
-
-            %Package{ name: repo_text_name,
-                      description: repo_description,
-                      stars: stargazers_count,
-                      link: repo_link_name,
-                      updated_days_ago: update_ago }
+            changes = %{stars: stargazers_count, updated_days_ago: update_ago}
+            {:ok, result} =
+              case Repo.get_by(Package, link: repo_link_name) do
+                nil  -> %Package{
+                          name: repo_text_name,
+                          description: repo_description,
+                          stars: stargazers_count,
+                          link: repo_link_name,
+                          section_id: section_id,
+                          updated_days_ago: update_ago
+                        }
+                package -> package
+              end
+              |> Package.changeset(changes)
+              |> Repo.insert_or_update
+            {:ok, result}
     else
-      _err -> nil
+      err -> {:error, err}
+    end
+  end
+
+  def package_info(repo_link_name) do
+    with {:ok, repo_info} <- Github.repo_info(repo_link_name),
+         {:ok, update_ago} <- Github.repo_last_commit_ago(repo_link_name) do
+      {:ok, repo_info, update_ago}
+    else
+      err -> {:error, err}
     end
   end
 
