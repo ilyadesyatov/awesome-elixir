@@ -14,6 +14,14 @@ defmodule AwesomeToolbox.Github do
     end
   end
 
+  def stars_count(repo_name) do
+    with {:ok, %{"stargazers_count" => stargazers_count} = repo_info} <- repo_info(repo_name) do
+      {:ok, stargazers_count}
+    else
+      err -> {:error, err}
+    end
+  end
+
   def repo_info(repo_name) do
     with {:ok, %HTTP.Response{status_code: 200} = resp} <-
          HTTP.get("https://api.github.com/repos/#{repo_name}", @default_headers),

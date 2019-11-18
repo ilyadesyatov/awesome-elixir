@@ -10,5 +10,7 @@ defmodule Funbox.Repo.Migrations.CreatePackage do
       add :updated_days_ago, :integer
       add :section_id, references(:sections)
     end
+
+    create index(:packages, [:section_id])
   end
 end

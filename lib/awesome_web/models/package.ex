@@ -16,6 +16,6 @@ defmodule AwesomeWeb.Package do
   def changeset(struct, params \\ %{}) do
     struct
     |> cast(params, [:name, :description, :stars, :updated_days_ago])
-    |> validate_required([:name, :description, :stars, :updated_days_ago])
+    |> validate_required([:name, :description])
   end
 end

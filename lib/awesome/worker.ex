@@ -6,8 +6,8 @@ defmodule Awesome.Worker do
   @github_link Application.get_env(:awesome, :link_for_parse)
 
   def start_link(_) do
-    {:ok, queue, tuple_readme} = initial_queue(@github_link)
-    GenServer.start_link(__MODULE__, {queue, tuple_readme})
+    {:ok, queue} = initial_queue(@github_link)
+    GenServer.start_link(__MODULE__, queue)
   end
 
   defp schedule_work do
@@ -19,44 +19,34 @@ defmodule Awesome.Worker do
     {:ok, state}
   end
 
-  def handle_info(:work, {queue, tuple_readme}) do
-    {queue, tuple_readme} =
+  def handle_info(:work, queue) do
+    queue =
       case :queue.out(queue) do
         {{_value, item}, queue_2} ->
           queue = queue_2
-          queue = process(item, queue, tuple_readme)
-          {queue, tuple_readme}
+          queue = process(item, queue)
+          queue
         _ ->
           IO.puts "Empty queue."
           Process.sleep(20 * 60 * 1000)
-          {:ok, queue, tuple_readme} = initial_queue(@github_link)
-          {queue, tuple_readme}
+          {:ok, queue} = initial_queue(@github_link)
+          queue
       end
     schedule_work()
-    {:noreply, {queue, tuple_readme}}
+    {:noreply, queue}
   end
 
-  def process({:section_name, name}, queue, tuple_readme) do
-    {:ok, section} = AwesomeToolbox.create_section(name, tuple_readme)
-    {:ok, packages} = AwesomeToolbox.section_packages(section.name, tuple_readme)
-
-    queue = Enum.reduce(packages, queue, fn package, queue ->
-      :queue.in({:package_name, {package, section.id}}, queue)
-    end)
-    queue
-  end
-
-  def process({:package_name, {name, section_id}}, queue, _tuple_readme) do
-    AwesomeToolbox.package(name, section_id)
+  def process(package, queue) do
+    with {:ok, stars, update_ago} <- AwesomeToolbox.GithubParser.package_info(package.link) do
+      changes = %{stars: stars, updated_days_ago: update_ago}
+      {:ok, updated_package} = AwesomeToolbox.update_package(package, changes)
+    end
     queue
   end
 
   def initial_queue(link) do
-    {:ok, tuple_readme, sections_parse_result} = AwesomeToolbox.annotate_readme(link)
-    sections = sections_parse_result |> Enum.map(fn(element) ->
-      {:section_name, hd elem(element, 2)}
-    end)
-    queue = :queue.from_list(sections)
-    {:ok, queue, tuple_readme}
+    {:ok, result} = AwesomeToolbox.annotate_readme(link)
+    queue = :queue.from_list(result)
+    {:ok, queue}
   end
 end
