@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="phoenix" type="mix">
+  <library name="phoenix">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/_build/dev/lib/phoenix/ebin" />
       <root url="file://$PROJECT_DIR$/_build/test/lib/phoenix/ebin" />

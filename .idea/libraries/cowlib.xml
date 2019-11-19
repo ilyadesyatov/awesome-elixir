@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="cowlib" type="mix">
+  <library name="cowlib">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/_build/dev/lib/cowlib/ebin" />
       <root url="file://$PROJECT_DIR$/_build/test/lib/cowlib/ebin" />

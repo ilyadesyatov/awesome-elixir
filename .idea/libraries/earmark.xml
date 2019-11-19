@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="earmark" type="mix">
+  <library name="earmark">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/_build/dev/lib/earmark/ebin" />
       <root url="file://$PROJECT_DIR$/_build/test/lib/earmark/ebin" />

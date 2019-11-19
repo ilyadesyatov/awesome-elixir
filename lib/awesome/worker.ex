@@ -26,12 +26,14 @@ defmodule Awesome.Worker do
           queue = queue_2
           queue = process(item, queue)
           queue
+
         _ ->
-          IO.puts "Empty queue."
+          IO.puts("Empty queue.")
           Process.sleep(20 * 60 * 1000)
           {:ok, queue} = initial_queue(@github_link)
           queue
       end
+
     schedule_work()
     {:noreply, queue}
   end
@@ -41,6 +43,7 @@ defmodule Awesome.Worker do
       changes = %{stars: stars, updated_days_ago: update_ago}
       {:ok, updated_package} = AwesomeToolbox.update_package(package, changes)
     end
+
     queue
   end
 

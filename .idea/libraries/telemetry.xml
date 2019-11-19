@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="telemetry" type="mix">
+  <library name="telemetry">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/_build/dev/lib/telemetry/ebin" />
       <root url="file://$PROJECT_DIR$/_build/test/lib/telemetry/ebin" />

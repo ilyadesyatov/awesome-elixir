@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="decimal" type="mix">
+  <library name="decimal">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/_build/dev/lib/decimal/ebin" />
       <root url="file://$PROJECT_DIR$/_build/test/lib/decimal/ebin" />

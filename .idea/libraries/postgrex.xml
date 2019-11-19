@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="postgrex" type="mix">
+  <library name="postgrex">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/_build/dev/lib/postgrex/ebin" />
       <root url="file://$PROJECT_DIR$/_build/test/lib/postgrex/ebin" />

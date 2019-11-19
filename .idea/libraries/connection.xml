@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="connection" type="mix">
+  <library name="connection">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/_build/dev/lib/connection/ebin" />
       <root url="file://$PROJECT_DIR$/_build/test/lib/connection/ebin" />

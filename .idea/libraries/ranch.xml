@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="ranch" type="mix">
+  <library name="ranch">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/_build/dev/lib/ranch/ebin" />
       <root url="file://$PROJECT_DIR$/_build/test/lib/ranch/ebin" />

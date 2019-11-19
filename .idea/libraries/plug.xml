@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="plug" type="mix">
+  <library name="plug">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/_build/dev/lib/plug/ebin" />
       <root url="file://$PROJECT_DIR$/_build/test/lib/plug/ebin" />

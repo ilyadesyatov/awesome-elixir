@@ -13,11 +13,11 @@ defmodule AwesomeWeb.Section do
 
   def minimum_stars(number) do
     from s in AwesomeWeb.Section,
-        join: p in assoc(s, :packages),
-        on: p.section_id == s.id,
-        where: p.stars >= ^number,
-        order_by: s.name,
-        preload: [packages: p]
+      join: p in assoc(s, :packages),
+      on: p.section_id == s.id,
+      where: p.stars >= ^number,
+      order_by: s.name,
+      preload: [packages: p]
   end
 
   def changeset(struct, params \\ %{}) do
