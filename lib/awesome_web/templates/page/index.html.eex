@@ -14,7 +14,7 @@
         <ul class="packages-list" >
             <%= for package <- section.packages do %>
                 <li class=<%= less_year(package.updated_days_ago) %>>
-                    <%= link(package.name, to: package.link) %>
+                    <%= link(package.name, to: "https://github.com/#{package.link}") %>
                     <span class="ml-10">⭐<%= package.stars %></span>
                     <span class="glyphicon glyphicon-calendar ml-10" aria-hidden="true"><%= package.updated_days_ago %></span>
                     -
