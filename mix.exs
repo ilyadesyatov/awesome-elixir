@@ -44,10 +44,10 @@ defmodule Awesome.MixProject do
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
       {:castore, "~> 0.1.0"},
-      {:earmark, "~> 1.4.1" },
+      {:earmark, "~> 1.4.1"},
       {:floki, "~> 0.23.0"},
       {:mint, "~> 0.4.0"},
-      {:ex_machina, "~> 2.3", only: :test},
+      {:ex_machina, "~> 2.3", only: :test}
     ]
   end
 
